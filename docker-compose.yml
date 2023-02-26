@@ -1,0 +1,11 @@
+services:
+  pocketbase:
+    image: pocketbase:0.13.0
+    restart: unless-stopped
+    container_name: pocketbase
+    #ports:
+      # REST API: http://127.0.0.1:8090/api/
+      # Admin UI: http://127.0.0.1:8090/_/
+    #  - 8090:8090
+    volumes:
+      - ./data/:/pb_data
