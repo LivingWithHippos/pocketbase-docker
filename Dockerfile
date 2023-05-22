@@ -1,6 +1,6 @@
 FROM alpine as downloader
 
-ARG pocket_url=https://github.com/pocketbase/pocketbase/releases/download/v0.13.0/pocketbase_0.13.0_linux_amd64.zip
+ARG pocket_url=https://github.com/pocketbase/pocketbase/releases/download/v0.16.0/pocketbase_0.16.0_linux_amd64.zip
 
 ADD $pocket_url /tmp/pocketbase.zip
 RUN unzip /tmp/pocketbase.zip -d /tmp/
