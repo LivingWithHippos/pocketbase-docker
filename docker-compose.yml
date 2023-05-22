@@ -1,6 +1,6 @@
 services:
   pocketbase:
-    image: pocketbase:0.13.0
+    image: pocketbase:0.16.0
     restart: unless-stopped
     container_name: pocketbase
     #ports:
