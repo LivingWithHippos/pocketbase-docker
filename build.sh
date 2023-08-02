@@ -1,3 +1,4 @@
 #!/bin/sh
 
-docker build . --tag "pocketbase:0.16.0"
+version="0.17.1"
+docker build . --tag "pocketbase:${version}" --tag "pocketbase:latest"
