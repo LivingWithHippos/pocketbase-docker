@@ -1,8 +1,10 @@
 services:
   pocketbase:
-    image: pocketbase:0.16.0
+    image: pocketbase:0.17.1
+    # image: pocketbase:latest
     restart: unless-stopped
     container_name: pocketbase
+    # uncomment if you don't use a reverse proxy and needs the port directly exposed
     #ports:
       # REST API: http://127.0.0.1:8090/api/
       # Admin UI: http://127.0.0.1:8090/_/
